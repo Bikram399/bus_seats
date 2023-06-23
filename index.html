@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Bus Seat Booking</title>
+</head>
+
+<body>
+  <div class="bus-container">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" fill="currentColor" class="bi bi-arrow-left"
+      viewBox="0 0 12 12">
+      <path fill-rule="evenodd"
+        d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
+    </svg>
+    &nbsp;&nbsp;
+    <label>Bus Travels</label>
+    <hr class="hr"/>
+    <select id="bus">
+      <option value="1000">Delhi to Lucknow (RS.1000)</option>
+      <option value="1320">Lucknow to Mathura(RS.1320)</option>
+      <option value="1400">Delhi to Ayodhya (RS.1400)</option>
+      <option value="2260">Lucknow to Mussoorie (RS.2260)</option>
+    </select>
+  </div>
+
+  <div class="big__div">
+    <div class="imp__notes">
+      <ul class="showcase">
+        <span>Know About Seat Types <svg class="showcase__svg" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
+            clip-rule="evenodd">
+            <path
+              d="M12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12-12-5.377-12-12 5.377-12 12-12zm0 1c6.071 0 11 4.929 11 11s-4.929 11-11 11-11-4.929-11-11 4.929-11 11-11zm.5 17h-1v-9h1v9zm-.5-12c.466 0 .845.378.845.845 0 .466-.379.844-.845.844-.466 0-.845-.378-.845-.844 0-.467.379-.845.845-.845z" />
+          </svg></span>
+        <hr />
+        <li>
+          <div class="seat">
+            <div class="seatpellow available"></div>
+          </div>
+          <small>Available</small>
+        </li>
+        <li>
+          <div class="seat">
+            <div class="seatpellow available"></div>
+          </div>
+          <small>Available only for women</small>
+        </li>
+        <li>
+          <div class="seat selected">
+            <div class="seatpellow selected"></div>
+          </div>
+          <small>Selected By You</small>
+        </li>
+        <li>
+          <div class="seat sold">
+            <div class="seatpellow"></div>
+          </div>
+          <small>Booked by others</small>
+        </li>
+        <li>
+          <div class="seat sold women">
+            <div class="seatpellow"></div>
+          </div>
+          <small>Booked by female passengers</small>
+        </li>
+      </ul>
+
+    </div>
+
+    <div class="container">
+      <span>LOWER DECK</span>
+      <hr />
+      <div class="column ">
+        <div class="seat" id="L1">
+          <div class="seatpellow available"></div>
+        </div>
+        <div class="sidecol">
+          <div class="seat" id="L2">
+            <div class="seatpellow available"></div>
+          </div>
+          <div class="seat sold" id="L3">
+            <div class="seatpellow"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="column ">
+        <div class="seat sold" id="L4">
+          <div class="seatpellow"></div>
+        </div>
+        <div class="sidecol">
+          <div class="seat" id="L5">
+            <div class="seatpellow available"></div>
+          </div>
+          <div class="seat" id="L6">
+            <div class="seatpellow available"></div>
+          </div>
+        </div>
+      </div>
+      <div class="column ">
+        <div class="seat" id="L7">
+          <div class="seatpellow available"></div>
+        </div>
+        <div class="sidecol">
+
+          <div class="seat" id="L8">
+            <div class="seatpellow available"></div>
+          </div>
+          <div class="seat sold" id="L9">
+            <div class="seatpellow"></div>
+          </div>
+        </div>
+      </div>
+      <div class="column ">
+        <div class="seat" id="L10">
+          <div class="seatpellow available"></div>
+        </div>
+        <div class="sidecol">
+
+          <div class="seat" id="L11">
+            <div class="seatpellow available"></div>
+          </div>
+          <div class="seat sold" id="L12">
+            <div class="seatpellow"></div>
+          </div>
+        </div>
+      </div>
+      <div class="column ">
+        <div class="seat" id="L13">
+          <div class="seatpellow available"></div>
+        </div>
+        <div class="sidecol">
+
+          <div class="seat" id="L14">
+            <div class="seatpellow available"></div>
+          </div>
+          <div class="seat sold" id="L15">
+            <div class="seatpellow"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    <div class="container__2">
+      <span>UPPER DECK</span>
+      <hr />
+      <div class="column ">
+        <div class="seat sold">
+          <div class="seatpellow"></div>
+        </div>
+        <div class="sidecol">
+
+          <div class="seat ">
+            <div class="seatpellow available"></div>
+          </div>
+          <div class="seat sold">
+            <div class="seatpellow"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="column ">
+        <div class="seat">
+          <div class="seatpellow available"></div>
+        </div>
+        <div class="sidecol">
+
+          <div class="seat">
+            <div class="seatpellow available"></div>
+          </div>
+          <div class="seat">
+            <div class="seatpellow available"></div>
+          </div>
+        </div>
+      </div>
+      <div class="column ">
+        <div class="seat">
+          <div class="seatpellow available"></div>
+        </div>
+        <div class="sidecol">
+
+          <div class="seat">
+            <div class="seatpellow available"></div>
+          </div>
+          <div class="seat sold">
+            <div class="seatpellow"></div>
+          </div>
+        </div>
+      </div>
+      <div class="column ">
+        <div class="seat">
+          <div class="seatpellow available"></div>
+        </div>
+        <div class="sidecol">
+
+          <div class="seat">
+            <div class="seatpellow available"></div>
+          </div>
+          <div class="seat sold">
+            <div class="seatpellow"></div>
+          </div>
+        </div>
+      </div>
+      <div class="column ">
+        <div class="seat">
+          <div class="seatpellow available"></div>
+        </div>
+        <div class="sidecol">
+
+          <div class="seat">
+            <div class="seatpellow available"></div>
+          </div>
+          <div class="seat sold">
+            <div class="seatpellow"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="checkout">
+    <p class="text">
+      <span id="count">0</span> Seat | RS.<span id="total">0</span>
+    </p>
+
+    <button class="button button2">Continue</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

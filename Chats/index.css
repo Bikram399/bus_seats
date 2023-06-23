@@ -1,0 +1,190 @@
+.input-value {
+  position: relative;
+  font-weight: 500;
+}
+.input-value-wrapper,
+.max-value-wrapper {
+  position: absolute;
+  top: 155px;
+  left: 80px;
+  border-radius: var(--br-9xs);
+  background-color: var(--blue-blue-2);
+  width: 310px;
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-base);
+  box-sizing: border-box;
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-size: var(--font-size-base);
+}
+.max-value-wrapper {
+  left: 457px;
+}
+.enter-values,
+.graphs {
+  position: absolute;
+  top: 94px;
+  left: 80px;
+  font-weight: 600;
+}
+.graphs {
+  top: 310px;
+}
+.frame-child {
+  align-self: stretch;
+  position: relative;
+  background-color: var(--blue-blue-6);
+  height: 188px;
+}
+.rectangle-wrapper {
+  border-radius: var(--br-9xs);
+  background-color: var(--blue-blue-2);
+  width: 101px;
+  height: 275px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+.div {
+  position: relative;
+  font-weight: 600;
+}
+.frame-parent {
+  position: absolute;
+  top: 394px;
+  left: 118px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-base);
+  color: var(--blue-blue-6);
+}
+.level-1 {
+  position: absolute;
+  top: 754px;
+  left: 129px;
+  font-weight: 600;
+}
+.input-value-ellipse,
+.max-ellipse-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  background-color: var(--blue-blue-2);
+  width: 275px;
+  height: 275px;
+}
+.input-value-ellipse {
+  background-color: var(--blue-blue-6);
+}
+.div1 {
+  position: absolute;
+  top: 170px;
+  left: 80px;
+  font-weight: 600;
+}
+.max-ellipse-1-parent {
+  position: absolute;
+  top: 394px;
+  left: 502.5px;
+  width: 275px;
+  height: 275px;
+  font-size: 32px;
+  color: var(--color-white);
+}
+.level-2 {
+  position: absolute;
+  top: 754px;
+  left: 598.5px;
+  font-weight: 600;
+}
+.frame-item {
+  align-self: stretch;
+  position: relative;
+  background: linear-gradient(0deg, #c2e3ff, #008cff);
+  height: 275px;
+}
+.frame-group {
+  position: absolute;
+  top: 394px;
+  left: 1061px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-base);
+  color: var(--blue-blue-6);
+}
+.level-3 {
+  position: absolute;
+  top: 754px;
+  left: 1070px;
+  font-weight: 600;
+}
+.selection-colors {
+  position: relative;
+  font-size: var(--font-size-5xl);
+}
+.frame-inner {
+  position: relative;
+  background-color: var(--color-white);
+  border: 1px solid var(--blue-blue-10);
+  box-sizing: border-box;
+  width: 19px;
+  height: 22.56px;
+}
+.frame-container,
+.rectangle-parent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.rectangle-parent {
+  justify-content: flex-start;
+  gap: var(--gap-base);
+}
+.frame-container {
+  align-self: stretch;
+  justify-content: space-between;
+}
+.frame-child1,
+.frame-child2,
+.rectangle-div {
+  position: relative;
+  background-color: var(--blue-blue-2);
+  width: 19px;
+  height: 22.56px;
+}
+.frame-child1,
+.frame-child2 {
+  background-color: var(--blue-blue-6);
+}
+.frame-child2 {
+  background-color: var(--blue-blue-10);
+}
+.selection-colors-parent {
+  position: absolute;
+  top: 94px;
+  left: 952px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 10px;
+  font-size: var(--font-size-base);
+}
+.assignment {
+  position: relative;
+  background-color: var(--color-white);
+  width: 100%;
+  height: 832px;
+  text-align: left;
+  font-size: var(--font-size-5xl);
+  color: var(--blue-blue-10);
+  font-family: var(--font-inter);
+}
